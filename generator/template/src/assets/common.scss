@@ -1,0 +1,110 @@
+@import 'reset.scss';
+@import 'page.scss';
+@import 'media.scss';
+
+:root {
+  --theme-color: #{$theme_green};
+}
+body {
+  &.green {
+    --theme-color: #{$theme_green};
+  }
+  &.blue {
+    --theme-color: #{$theme_blue};
+  }
+  &.red {
+    --theme-color: #{$theme_red};
+  }
+  &.orange {
+    --theme-color: #{$theme_orange};
+  }
+  &.zi {
+    --theme-color: #{$theme_zi};
+  }
+}
+
+.xag-color-theme {
+  color: $theme_color;
+  color: var(--theme-color, $theme_color);
+}
+.xag-red {
+  color: $theme_red;
+}
+.xag-orange {
+  color: $theme_orange;
+}
+.xag-blue {
+  color: $theme_blue;
+}
+.xag-green {
+  color: $theme_green;
+}
+.xag-zi {
+  color: $theme_zi;
+}
+.xag-gray {
+  color: #999;
+}
+
+.xag-bg-theme {
+  background: $theme_color;
+  background: var(--theme-color, $theme_color);
+  color: white;
+}
+
+.xag-bg-red {
+  background: $theme_red;
+  color: white;
+}
+
+.xag-bg-orange {
+  background: $theme_orange;
+  color: white;
+}
+
+.xag-bg-blue {
+  background: $theme_blue;
+  color: white;
+}
+
+.xag-bg-green {
+  background: $theme_green;
+  color: white;
+}
+
+.xag-bg-zi {
+  background: $theme_zi;
+  color: white;
+}
+
+.xag-bg-gray {
+  background: $theme_gray;
+  color: white;
+}
+
+.xag-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin ellipsis($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  max-height: 24px * $line;
+}
+
+.xag-ellipsis-1 {
+  @include ellipsis(1)
+}
+
+.xag-ellipsis-2 {
+  @include ellipsis(2)
+}
+
+.xag-ellipsis-3 {
+  @include ellipsis(3)
+}

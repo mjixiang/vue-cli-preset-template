@@ -1,0 +1,49 @@
+html,
+body,
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+.xag-container {
+  flex: 1;
+  height: 100%;
+  // overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.xag-buttons {
+  display: flex;
+  .xag-button {
+    flex: 1;
+  }
+  .xag-button + .xag-button {
+    margin-left: $padding;
+  }
+}
+
+.xag-button {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  line-height: 24px;
+  padding: 5px 30px;
+  font-size: 14px;
+  border-radius: $radius;
+  user-select: none;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.disable,
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  &.large {
+    padding: 8px 30px 8px 30px;
+  }
+  i {
+    margin-right: 5px;
+    margin-left: -5px;
+  }
+}

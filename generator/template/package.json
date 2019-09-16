@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "translate": "node translate"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "qs": "^6.6.0"
+  },
+  "devDependencies": {
+    "compression-webpack-plugin": "^2.0.0"
+  }
+}

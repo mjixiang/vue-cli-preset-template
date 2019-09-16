@@ -1,0 +1,10 @@
+{
+  "账号": "account number",
+  "密码": "password",
+  "忘记密码?": "forget password?",
+  "登录中..": "logging in..",
+  "登录": "log in",
+  "请输入账号": "Please input Username",
+  "请输入密码": "Please enter your password",
+  "登录失败": "Login failed"
+}
