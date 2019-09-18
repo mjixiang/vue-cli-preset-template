@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "views/*": ["src/views/*"],
+      "components/*": ["src/components/*"],
+      "mixins/*": ["src/mixins/*"],
+      "apis/*": ["src/apis/*"],
+      "utils/*": ["src/utils/*"],
+      "config/*": ["src/config/*"],
+      "assets/*": ["src/assets/*"],
+      "images/*": ["src/assets/images/*"]
+    },
+    "target": "ES6",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
